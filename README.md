@@ -2,13 +2,13 @@
 
 ## Level 0 - Render Props
 
-Use render props to make the MessageLayout component render a list and an input for messages
+Use render props to make the MessageLayout component render a list and an Input for messages
 
 Bonus: add a toggle button that will change the MessageLayout Theme.
 
 ## Level 2 - HOC and login
 
-Write a Higher order component that will conditionnaly render your MessageLayout OR the Login layout based on the `isLoggedIn` property in state
+Write a Higher Order Component that will conditionnaly render your MessageLayout OR the Login layout based on the `isLoggedIn` property in state
 
 ## Level 3 (bonus) - Hack it
 
