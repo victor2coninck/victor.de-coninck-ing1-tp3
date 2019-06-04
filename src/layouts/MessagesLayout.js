@@ -1,7 +1,9 @@
 import React from "react";
 import { Layout } from "antd";
+import MessageList from "../components/MessageList";
+import InputMessage from "../components/InputMessage";
 
-const MessageLayout = props => (
+const MessageLayout = ({list=[], handleSubmit = () => {}}) => (
   <Layout style={{ height: "calc(100%)" }}>
     <Layout.Content style={{ padding: "0 50px", height: "calc(80%)" }}>
       <Layout
@@ -12,7 +14,7 @@ const MessageLayout = props => (
         }}
       >
         <Layout.Content style={{ padding: "0 24px", height: "calc(80%)" }}>
-          Content
+        <MessageList messages={list}/>
         </Layout.Content>
       </Layout>
     </Layout.Content>
@@ -23,7 +25,7 @@ const MessageLayout = props => (
         height: "calc(20%)"
       }}
     >
-      Write Message
+      <InputMessage onSubmit={handleSubmit}/>
     </Layout.Footer>
   </Layout>
 );

@@ -9,12 +9,20 @@ const mapStateToProps = ({ messages }, ownProps) => ({
 });
 
 class Messages extends React.Component {
+/*
+  constructor(props)
+  {
+    super(props);
+    this.handleSubmitMessage = this.handleSubmitMessage.bind(this)
+  }
+*/
+
   handleSubmitMessage(message) {
     this.props.dispatch(addMessage(message));
   }
 
   render() {
-    return <MessageLayout />;
+  return <MessageLayout handleSubmit={this.handleSubmitMessage}/>;
   }
 }
 
