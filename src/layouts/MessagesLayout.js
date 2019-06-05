@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import MessageList from "../components/MessageList";
 import InputMessage from "../components/InputMessage";
 
-const MessageLayout = ({list=[], handleSubmit = () => {}}) => (
+const MessageLayout = ({list = [], handleSubmit = () => {}}) => (
   <Layout style={{ height: "calc(100%)" }}>
     <Layout.Content style={{ padding: "0 50px", height: "calc(80%)" }}>
       <Layout
