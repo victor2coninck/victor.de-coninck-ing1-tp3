@@ -8,7 +8,7 @@ const MessageList = ({ messages }) => {
   <Timeline>{
     messages.map(elt =>
     <Timeline.Item key={elt.id}>
-      {elt.userName} - {elt.date.toLocaleString()} : {elt.text}
+      {elt.userName} - {elt.date} : {elt.text}
     </Timeline.Item>
     )
   }

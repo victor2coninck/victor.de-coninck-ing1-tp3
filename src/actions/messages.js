@@ -7,5 +7,5 @@ export const add = (text, userName) => ({
   id: nextMessageId++,
   text,
   userName,
-  date: new Date().getTime()
+  date: new Date().toLocaleDateString()
 });
